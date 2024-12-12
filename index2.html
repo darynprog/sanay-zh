@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Санау жүйесінде амалдар қолдану</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Санау жүйесінде амалдар қолдану</h1>
+        <form id="converter">
+            <label for="num1">Бірінші сан:</label>
+            <input type="text" id="num1" placeholder="Мысалы: 1010" required>
+
+            <label for="num2">Екінші сан:</label>
+            <input type="text" id="num2" placeholder="Мысалы: 111" required>
+
+            <label for="base">Бастапқы негіз:</label>
+            <select id="base" required>
+                <option value="2">Екілік</option>
+                <option value="8">Сегіздік</option>
+                <option value="10" selected>Ондық</option>
+                <option value="16">Он алтылық</option>
+            </select>
+
+            <label for="operation">Амал:</label>
+            <select id="operation" required>
+                <option value="+">Қосу</option>
+                <option value="-">Азайту</option>
+                <option value="*">Көбейту</option>
+                <option value="/">Бөлу</option>
+            </select>
+
+            <label for="toBase">Соңғы негіз:</label>
+            <select id="toBase" required>
+                <option value="2">Екілік</option>
+                <option value="8">Сегіздік</option>
+                <option value="10" selected>Ондық</option>
+                <option value="16">Он алтылық</option>
+            </select>
+
+            <button type="button" onclick="convertAndCalculate()">Есептеу</button>
+        </form>
+        <div class="result" id="result"></div>
+        <p>&copy; 2024 Daryn | Prog</p>
+    </div>
+    <script src="styles.js"></script>
+</body>
+</html>
